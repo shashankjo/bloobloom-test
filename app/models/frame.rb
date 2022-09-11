@@ -1,4 +1,6 @@
 class Frame < ApplicationRecord
+  has_many :glasses
+
   ACTIVE   = 'active'
   INACTIVE = 'inactive'
 

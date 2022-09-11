@@ -19,6 +19,10 @@ Currency.create(name: "EUR", dollar_conversion_rate: 0.99)
 Currency.create(name: "JOD", dollar_conversion_rate: 1.41)
 Currency.create(name: "JPY", dollar_conversion_rate: 0.007)
 
+Len.create(color: "green", prescription_type: "varifocals", lens_type: "transition", stock: 10, price: 150.00)
+Len.create(color: "pink", prescription_type: "single_vision", lens_type: "blue_light", stock: 10, price: 250.00)
+Len.create(color: "blue", prescription_type: "fashion", lens_type: "classic", stock: 10, price: 350.00)
+
 User.create(name: "Kumar", country: "JPN", currency: "JPY")
 User.create(name: "Shashank", country: "ENG", currency: "GBP")
 
