@@ -11,7 +11,7 @@ module Api
             frames: frames
           }
         else
-          render status: 200, json: { errorCode: 2, errorMsg: 'No frames in the inventory' }
+          render status: 200, json: { errorCode: 1, errorMsg: 'No frames in the inventory' }
         end
       end
 
@@ -23,7 +23,7 @@ module Api
             lens: lens
           }
         else
-          render status: 200, json: { errorCode: 2, errorMsg: 'No lens in the inventory' }
+          render status: 200, json: { errorCode: 1, errorMsg: 'No lens in the inventory' }
         end
       end
 
