@@ -1,0 +1,276 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Bloobloom APIs",
+		"_postman_id": "43ce8577-b87f-a5fa-df7e-7a2244913046",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Frames",
+			"request": {
+				"url": "localhost:3000/v1/user/frames",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Frames",
+			"request": {
+				"url": "localhost:3000/v1/admin/create_frame",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Frame78",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "inactive",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "01",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "tsting create frame",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "400",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Lens",
+			"request": {
+				"url": "localhost:3000/v1/admin/create_lens",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "color",
+							"value": "green",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "prescription_type",
+							"value": "varifocals",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "01",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "tsting create frame",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "400",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lens_type",
+							"value": "transition",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Frames",
+			"request": {
+				"url": "localhost:3000/v1/admin/delete_frame",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "frame_id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Lens",
+			"request": {
+				"url": "localhost:3000/v1/admin/delete_lens",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lens_id",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"request": {
+				"url": "localhost:3000/v1/user/add_to_cart",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "len_id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "frame_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cart",
+			"request": {
+				"url": {
+					"raw": "localhost:3000/v1/user/cart?user_id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"user",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
